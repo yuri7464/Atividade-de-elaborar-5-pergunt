@@ -1,0 +1,188 @@
+Atividade 1:
+programa
+{
+//Vacinar adultos acima de 40 anos
+//Se caso nao tiver tomado nenhuma vez a vacina. poderá vacinar abaixo dos 40
+	
+	funcao inicio()
+	{
+	inteiro idade, sexo, vacina, opcao
+		escreva("Informe sua idade:")
+		leia(idade)
+		escreva("1)Já tomou a vacina pelo menos 1 vez\n")
+		escreva("2)Nunca tomou a vacina\n")
+		
+		escreva("Informe a opção que deseja ")
+		leia(opcao)
+
+		limpa()
+		
+		
+		se(idade>40){
+			escreva("Pode ser vacinado")
+		} 
+		senao{
+			escreva("Não pode ser vacinado")
+		} 
+		limpa()
+		escolha(opcao){
+		caso 1:
+		escreva("Não pode tomar denovo abaixo dos 40")	
+		pare	
+		caso 2:
+		escreva("Pode tomar a vacina mesmo abaixo dos 40")
+		pare
+		}
+		
+		
+		}
+		 
+		
+		
+
+		
+	
+}
+
+Atividade 2:
+
+programa
+{
+//
+realizar calculo de 5 em 5 ate chegar a 25
+	
+	funcao inicio()
+	{
+	real num, resultado
+		escreva("Digite um numero: \n")
+		leia(num)
+
+		para(real cont=1; cont<=20; cont++){
+		escreva(num, "+", cont, "=", resultado=num+1, "\n")
+		cont++
+		cont++
+		cont++
+		cont++
+	}
+			
+		
+	}
+}
+
+Atividade 3
+
+programa
+{
+//escrever um algoritmo de ir a praia, ou ao cinema
+	
+	funcao inicio()
+	{
+	inteiro opcao, opcao2
+
+		
+		escreva("1)Ir a praia", "\n")
+		escreva("2)Ir ao cinema", "\n")
+
+		escreva("informe a opção que deseja:", "\n")
+		leia(opcao)
+          limpa()
+		escreva("1)ir de bike", "\n")
+		escreva("2)ir de onibus", "\n")
+		leia(opcao2)
+
+		escolha(opcao){
+			caso 1:
+			escreva("Iremos a praia")
+			pare
+			caso 2:
+			escreva("Iremos ao cinema")
+			pare}
+          limpa()
+	    	escolha(opcao2){
+	    	caso 1:
+	    	escreva("Iremos de bike!")
+	    	pare
+	    	caso 2:
+	    	escreva("Iremos de ônibus!")
+	    	pare
+	    	
+	    }
+			
+			
+			
+		}
+		
+
+	
+}
+
+Atividade 4
+
+programa
+{
+//escrever um algoritmo para saber se paga hoje ou amanha
+	
+	funcao inicio()
+	{
+	inteiro opcao, opcao2, divida=600, div
+		escreva("1)Pagar divida hoje", "\n")
+		escreva("2)Pagar divida amanhã", "\n")
+
+		escreva("Escolha uma opcao ")
+		leia(opcao)
+          limpa()
+		escreva("informe valor da divida:", "\n")
+		leia(div)
+          limpa()
+		
+		escolha(opcao){
+			caso 1:
+			escreva("Pagarei divida hoje", "\n")
+			se(div<=600)
+			escreva("pagarei via pix", "\n")
+			senao
+			escreva("pagarei pelo boleto") 
+			pare
+			
+			caso 2:
+			escreva("Pagarei divida amanhã", "\n")
+			se (div>=600)
+			escreva("Pagarei a divida em cheque", "\n")
+			senao 
+			escreva("pagarei divida em dinheiro")
+			pare
+		
+		}    
+		     
+
+	}
+}
+
+Atividade 5
+
+programa
+{
+//Escrever um algoritmo para dizer qual idade é maior, e depois somar as duas
+	
+	funcao inicio()
+	{
+	real idade1, idade2,soma
+		escreva("informe primeira idade:", "\n")
+		leia(idade1)
+		escreva("informe segunda idade:", "\n")
+		leia(idade2)
+     	limpa()
+
+          se(idade1>idade2){
+          	escreva("A primeira idade é maior", "\n")
+          }
+          	senao{
+          	escreva("A segunda idade é maior" ,"\n")	
+          }
+          
+          soma=idade1+idade2
+          escreva("A soma das idades é:", soma)
+         
+          }
+	
+}
